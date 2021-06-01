@@ -1,0 +1,259 @@
+#include "DxLib.h"
+
+//設定フレームレート(60FPS)
+#define FRAME_RATE (60)
+
+//１フレームの時間 (ミリ秒)
+#define FRAME_TIME (1000 / FRAME_RATE )
+
+
+#define WINDOW_WIDTH (1240)
+#define WINDOW_HEIGHT (720)
+
+//磁気情報
+#define PLAYER_PATH "Data/MyAirplane.png"
+
+//弾情報
+#define BULLET_PATH "Data/Bullet.png"
+#define BULLET_MAX_NUM (100)
+
+//自機情報構造体
+struct PlayerInfo {
+	int handle;
+	int x, y;
+};
+//弾情報構造体
+struct BulletInfo {
+	int handle;
+	int x, y;
+};
+
+
+struct FrameRateInfo
+{
+	int currentTime; //現在の時間
+	int lastFrameTime; //前回のフレーム実行時の時間
+	int count; //フレームカウント用
+	int calcFpsTime; //FPSを計算した時間
+	float fps; //計算したFPS
+};
+
+//フレームレート情報変数
+FrameRateInfo frameRateInfo;
+
+//FPS計算
+void CalcFPS();
+
+//FPS表示(デバック用)
+void DrawFPS();
+
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
+{
+	//ウィンドウの状態を設定する
+	ChangeWindowMode(true);
+
+	//DXライブラリの初期化
+	if (DxLib_Init() == -1)
+	{
+		return -1;
+	}
+
+	//ウィンドウサイズを変更
+	SetGraphMode(WINDOW_WIDTH, WINDOW_HEIGHT, 32);
+
+	//描画するスクリーンを設定
+	SetDrawScreen(DX_SCREEN_BACK);
+	
+	//プレイヤーを初期化
+	PlayerInfo playerInfo = { 0 };
+	playerInfo.handle = LoadGraph(PLAYER_PATH);
+
+	//弾初期化
+	BulletInfo bulletInfo[BULLET_MAX_NUM] = { 0 };
+	for (int i = 0; i < BULLET_MAX_NUM; i++) {
+		bulletInfo[i].handle = LoadGraph(BULLET_PATH);
+	}
+
+
+
+	int CircleA_Graph = LoadGraph("Data/CircleA.png");
+
+	int CircleA_x = 800, CircleA_y = 300;
+	int CircleA_halfsize = 512/2;
+
+
+
+	int CircleB_Graph = LoadGraph("Data/CircleB.png");
+
+
+	int CircleB_x = 200, CircleB_y = 200;
+	int CircleB_halfsize = 128/2;
+
+	int speed = 1;
+	double angle = 0;
+
+	bool atari(int,int,int,int,int,int);
+
+
+	//=====================================
+	//ゲームメインループ
+	while (ProcessMessage() != -1)
+	{
+		Sleep(1);//システムに処理を返す
+
+		frameRateInfo.currentTime = GetNowCount();
+
+		//最初のループなら
+		//現在の時間を、FPSの計算をした時間に設定
+		if (frameRateInfo.calcFpsTime == 0.0f)
+		{
+			frameRateInfo.calcFpsTime = frameRateInfo.currentTime;
+			frameRateInfo.fps = (float)FRAME_RATE;
+		}
+		//現在の時間が、前回のフレーム時より
+		//1000/60ミリ秒(1/60秒）以上経過していたら処理を実行する
+		if (frameRateInfo.currentTime - frameRateInfo.lastFrameTime >= FRAME_TIME)
+		{
+
+			//フレーム実行時の時間を更新
+			frameRateInfo.lastFrameTime = frameRateInfo.currentTime;
+
+			//フレーム数をカウント
+			frameRateInfo.count++;
+
+			if (CheckHitKey(KEY_INPUT_ESCAPE))
+			{
+				break;
+				//エスケープキーが押されたら終了
+			}
+
+			//画面に表示されたものを初期化（１ループの１度だけ行う）
+			ClearDrawScreen();
+
+			//FPS計算
+			CalcFPS();
+
+			//FPS表示
+			DrawFPS();
+
+			//=========================
+			//移動処理
+			// y720			 x1240
+			
+			if ((CheckHitKey(KEY_INPUT_LSHIFT) == 1)||(CheckHitKey(KEY_INPUT_RSHIFT) == 1)) {
+				speed = 4;
+			}
+			else if ((CheckHitKey(KEY_INPUT_LSHIFT) == 0) && (CheckHitKey(KEY_INPUT_RSHIFT) == 0)) {
+				speed = 2;
+			}
+
+
+
+			if ((CheckHitKey(KEY_INPUT_RIGHT)==1)|| (CheckHitKey(KEY_INPUT_D) == 1))
+			{
+				CircleB_x += speed;
+			}
+			if ((CheckHitKey(KEY_INPUT_LEFT) == 1) || (CheckHitKey(KEY_INPUT_A) == 1))
+			{
+				CircleB_x -= speed;
+			}
+			if ((CheckHitKey(KEY_INPUT_DOWN) == 1) || (CheckHitKey(KEY_INPUT_S) == 1))
+			{
+				CircleB_y += speed;
+			}
+			if ((CheckHitKey(KEY_INPUT_UP) == 1) || (CheckHitKey(KEY_INPUT_W) == 1))
+			{
+				CircleB_y-= speed;
+			}
+
+			angle += 0.0;
+
+	
+			if (atari(CircleA_x, CircleA_y, CircleA_halfsize, CircleB_x, CircleB_y, CircleB_halfsize)) {
+				DrawString(100, 100, "当たっている", GetColor(255, 255, 255));
+			}
+
+
+
+
+
+			DrawRotaGraph(CircleA_x, CircleA_y,1.0, angle, CircleA_Graph, true);
+			DrawRotaGraph(CircleB_x, CircleB_y,1.0, angle, CircleB_Graph, true);
+
+			//DrawFormatString(100, 50, GetColor(255, 255, 255), "A = %d", A);
+
+
+			//DrawFormatString(100, 100, GetColor(255, 255, 255), "x = %d ,y = %d" ,x,y );
+
+			//フリップ関数（ループの終わりに１度だけ行う）
+			ScreenFlip();
+
+		}
+
+	}
+	//最後に１回だけやる処理をここに書く
+	//DXライブラリの後処理
+	DxLib_End();
+
+	return 0;
+}
+
+//FPS計算
+void CalcFPS()
+{
+	//前回のFPSを計算した時間からの経過時間を求める
+	int difTime = frameRateInfo.currentTime - frameRateInfo.calcFpsTime;
+
+	//前回のFPSを計算した時間から
+	//一秒以上経過していたらFPSを計算する
+	if (difTime > 1000)
+	{
+		//フレーム回数をミリ秒に合わせる
+		//少数まで出したいのでfloatにキャスト
+		float frameCount = (float)(frameRateInfo.count * 1000.0f);
+
+		//FPSを求める
+		//理想の数値は 60000/10000で60となる
+		frameRateInfo.fps = frameCount / difTime;
+
+		//フレームレートカウントをクリア
+		frameRateInfo.count = 0;
+
+		//FPSを計算した時間を更新
+		frameRateInfo.calcFpsTime = frameRateInfo.currentTime;
+	}
+}
+
+//FPS表示(デバック用)
+void DrawFPS()
+{
+	unsigned int color = GetColor(255, 30, 30);
+	/*DrawFormatString(695, 580, color, "FPS[%.2f]", frameRateInfo.fps);*/
+}
+
+int kappa(int kappa_x, int move)
+{
+	int x = kappa_x;
+	x += move;
+	return x;
+}
+
+bool atari(int ax, int ay, int ahalf, int bx, int by, int bhalf) {
+
+	int A1, A2,A,D;
+	A1 = ((ax - bx));//間の長さ
+	A1 *= A1;
+	A2 = ((ay - by));
+	A2 *= A2;
+	A = A1 + A2;
+
+	D = ahalf + bhalf;
+	D *= D;
+
+	DrawFormatString(100, 50, GetColor(255, 255, 255), "A = %d,D = %d", A,D);
+
+	if (D > A) {
+		return true;
+	}
+	return false;
+}

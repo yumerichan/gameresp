@@ -1,0 +1,9 @@
+お借りした音素材
+
+決定ボタン押下44
+キャンセル2
+カーソル移動8	ArrowMove
+決定、ボタン押下35	Select
+キャンセル6	PlayerDamage
+歓声と拍手	Clear
+https://soundeffect-lab.info/sound/button/

@@ -1,0 +1,84 @@
+﻿  Bullet.cpp
+D:\game_benkyou\yukitest1\yukitest1\Src\Bullet\Bullet.cpp(26,41): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [14]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Bullet\Bullet.cpp(26,30): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+D:\game_benkyou\yukitest1\yukitest1\Src\Bullet\Bullet.cpp(35,53): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [21]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Bullet\Bullet.cpp(35,36): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+D:\game_benkyou\yukitest1\yukitest1\Src\Bullet\Bullet.cpp(87,35): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Bullet\Bullet.cpp(87,24): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Bullet\Bullet.cpp(98,47): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Bullet\Bullet.cpp(98,30): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+  Effect.cpp
+D:\game_benkyou\yukitest1\yukitest1\Src\Effect\Effect.cpp(110,17): error C2664: 'int DxLib::LoadDivGraph(const TCHAR *,int,int,int,int,int,int *,int)': 引数 1 を 'const char [256]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Effect\Effect.cpp(110,49): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2537,14): message : 'DxLib::LoadDivGraph' の宣言を確認してください
+  Input.cpp
+  SceneClear.cpp
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneClear.cpp(25,41): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [17]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneClear.cpp(25,28): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+  SceneGameOver.cpp
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneGameOver.cpp(25,47): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [20]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneGameOver.cpp(25,31): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+  ScenePlay.cpp
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(77,30): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [16]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(77,20): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(84,43): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [16]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(84,31): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(95,43): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [22]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(95,32): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(106,42): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [16]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(106,32): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(206,27): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(207,30): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(242,34): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(243,37): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(250,19): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(251,19): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(292,34): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(293,37): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(315,40): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(316,40): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(376,30): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(376,19): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(403,42): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(403,25): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(430,97): error C2664: 'int DxLib::DrawFormatString(int,int,unsigned int,const TCHAR *,...)': 引数 4 を 'const char [15]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(430,53): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(3586,14): message : 'DxLib::DrawFormatString' の宣言を確認してください
+  SceneTitle.cpp
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneTitle.cpp(71,41): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [17]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneTitle.cpp(71,28): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneTitle.cpp(74,41): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [15]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneTitle.cpp(74,31): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneTitle.cpp(88,45): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [19]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneTitle.cpp(88,30): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneTitle.cpp(89,34): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [14]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneTitle.cpp(89,25): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneTitle.cpp(90,47): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [20]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneTitle.cpp(90,31): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneTitle.cpp(91,39): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [16]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\SceneTitle.cpp(91,27): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+  shooting.cpp
+D:\game_benkyou\yukitest1\yukitest1\Src\shooting.cpp(59,40): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [17]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\shooting.cpp(59,30): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+D:\game_benkyou\yukitest1\yukitest1\Src\shooting.cpp(61,46): error C2664: 'int DxLib::LoadGraph(const TCHAR *,int)': 引数 1 を 'const char [20]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\shooting.cpp(61,33): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(2533,14): message : 'DxLib::LoadGraph' の宣言を確認してください
+  Sound.cpp
+D:\game_benkyou\yukitest1\yukitest1\Src\Sound\Sound.cpp(63,48): error C2664: 'int DxLib::LoadSoundMem(const TCHAR *,int,int)': 引数 1 を 'const char [256]' から 'const TCHAR *' へ変換できません。
+D:\game_benkyou\yukitest1\yukitest1\Src\Sound\Sound.cpp(63,47): message : 指示された型は関連がありません。変換には reinterpret_cast、C スタイル キャストまたは関数スタイルのキャストが必要です。
+D:\game_benkyou\DxLib_VC\プロジェクトに追加すべきファイル_VC用\DxLib.h(4598,14): message : 'DxLib::LoadSoundMem' の宣言を確認してください

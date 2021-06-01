@@ -1,0 +1,32 @@
+﻿  SceneClear.cpp
+  ScenePlay.cpp
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(287,28): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(288,31): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(406,33): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(407,36): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(418,40): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(419,40): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(450,33): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(451,36): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(473,40): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(474,40): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(507,33): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(508,36): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(525,40): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(526,40): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(569,33): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(569,22): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(592,52): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(593,52): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(598,42): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(599,42): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(617,32): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(617,21): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(676,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(676,26): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(750,29): warning C4805: '==': 演算中の 'int' 型と 'bool' 型の混用は安全ではありません
+D:\game_benkyou\yukitest1\yukitest1\Src\Scene\ScenePlay.cpp(760,19): warning C4553: '==': 式の結果が使用されていません。'=' を意図していますか?
+  SceneTitle.cpp
+  Sound.cpp
+  コードを生成中...
+  yukitest1.vcxproj -> D:\game_benkyou\yukitest1\x64\Debug\yukitest1.exe
